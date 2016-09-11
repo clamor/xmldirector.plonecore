@@ -18,6 +18,7 @@ ENV EXIST_HOME /home/plone/exist
 RUN virtualenv .
 RUN bin/pip install grampg
 RUN git clone https://github.com/clamor/xmldirector.plonecore.git  
+RUN git clone https://github.com/bluedynamics/yafowil.git xmldirector.plonecore/src/yafowil
 WORKDIR xmldirector.plonecore
 RUN git pull
 RUN ../bin/python bootstrap.py --setuptools-version=7.0 --version=2.2.5 -c buildout-plone-4.3.cfg
