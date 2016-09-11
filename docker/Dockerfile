@@ -1,4 +1,4 @@
-FROM zopyx/xmldirector-base
+FROM ffltr/xmldirector-base
 
 MAINTAINER Andreas Jung <info@zopyx.com>
 ADD start-all.sh /home/plone/start-all.sh
